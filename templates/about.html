@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Analyse de tri à bulle</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="http://127.0.0.1:5000" class="header-link">Page de tri</a>
+            <a href="http://127.0.0.1:5000">
+                <img src="static/logo.png" alt="Université Paris Nanterre Logo" class="header-logo">
+            </a>
+            <a href="http://127.0.0.1:5000/about" class="header-link">Test de code C</a>
+        </div>
+    </header>
+
+    <h1>Analyse de tri à bulle</h1>
+
+<!-- Formulaire pour entrer les entiers -->
+    <form method="POST" action="/about">
+        <label for="values">Étape 1 : Entrez 4 entiers séparés d'une virgule :</label><br>
+        <input type="text" name="values" id="values" placeholder="Entrez 4 entiers séparés par des virgules"><br><br>
+        
+        <label for="code">Étape 2 : Entrez votre code de tri à bulle en C :</label><br>
+        <label><b>void tri_a_bulle(int tab[ ], int n){</b></label><br><br>
+        <textarea name="code" id="code" rows="20" cols="100" placeholder="Entrez votre code ici">{{ code }}</textarea><br>
+        <button type="submit">Analyser</button>
+    </form>
+    
+    <!-- Affichage des résultats -->
+    {% if output %}
+        <h2>Résultats :</h2>
+        <pre>{{ output }}</pre>
+    {% endif %}
+    <br><br><br><br><br><br>
+    <footer>
+        <div class="footer-container">
+            BENDJEBBAR Adam 43006224 | KAN Kevin 43005517
+        </div>
+    </footer>
+
+</body>
+</html>

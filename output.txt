@@ -1,0 +1,14 @@
+Valeurs initiales : 2 9 4 7 8 3 
+Entasser : 9 2 4 7 8 3 
+Entasser : 9 8 4 7 2 3 
+Entasser : 8 3 4 7 2 
+Entasser : 8 7 4 3 2 
+Après extraction : 8 7 4 3 2 9 
+Entasser : 7 2 4 3 
+Entasser : 7 3 4 2 
+Après extraction : 7 3 4 2 8 9 
+Entasser : 4 3 2 
+Après extraction : 4 3 2 7 8 9 
+Entasser : 3 2 
+Après extraction : 3 2 4 7 8 9 
+Après extraction : 2 3 4 7 8 9 

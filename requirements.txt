@@ -1,0 +1,17 @@
+Flask==3.1.0
+clang==15.0.0
+
+pip install -r requirements.txt
+
+python app.py
+
+
+clang: 
+clang --version
+
+xcode-select --install
+
+find /Library /usr /opt -name "libclang.dylib" 2>/dev/null
+
+import clang.cindex
+clang.cindex.Config.set_library_file('/opt/homebrew/Cellar/llvm/19.1.4/lib/libclang.dylib')

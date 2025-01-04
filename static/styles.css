@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d3d3d3; /* Gris clair */
+    margin: 0;
+    padding: 0;
+    margin: 0 20px; /* Ajoute une marge de 20px à gauche et à droite */
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+p{
+    size: 20px;
+}
+
+header {
+    background-color: #c9dff0; /* Couleur bleu clair */
+    padding: 10px 0;
+    font-family: Arial, sans-serif; /* Police Arial */
+    color: #7a6d73; /* Couleur du texte */
+}
+header a, header .header-container {
+    font-family: Arial, sans-serif; /* Police Arial */
+    color: #7a6d73; /* Couleur du texte */
+    text-decoration: none; /* Pour supprimer le soulignement des liens */
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    height: 50px; /* Ajustez la taille du logo */
+}
+
+.header-link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #7a6d73;
+}
+
+footer {
+    background-color: #c9dff0; /* Couleur identique au header */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.footer-container {
+    font-size: 12px; /* Texte en petit */
+    color: black; /* Couleur du texte */
+}
+
+body{
+    text-align: center;
+}
+
+#code {
+    font-family: monospace; /* Police idéale pour afficher du code */
+    color: #333; /* Couleur du texte */
+    background-color: #f9f9f9; /* Couleur de fond */
+    padding: 10px; /* Espacement intérieur */
+    border: 1px solid #ccc; /* Bordure */
+    border-radius: 5px; /* Coins arrondis */
+    line-height: 1.5; /* Hauteur des lignes */
+    resize: vertical; /* Permet seulement un redimensionnement vertical */
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #c9dff0;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #c9dff0;
+}

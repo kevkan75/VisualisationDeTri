@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Page de tri</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="http://127.0.0.1:5000" class="header-link">Page de tri</a>
+            <a href="http://127.0.0.1:5000">
+                <img src="static/logo.png" alt="Université Paris Nanterre Logo" class="header-logo">
+            </a>
+            <a href="http://127.0.0.1:5000/about" class="header-link">Test de code C</a>
+        </div>
+    </header>
+    
+    <h1>Page de tri</h1>
+    <form method="POST" action="/">
+    
+        <p><label for="algorithm">Choissez un algorithme de tri :</label></p>
+        <select id="algorithm" name="algorithm">
+            <option value="dichotomie">Dichotomy Sort</option>
+            <option value="triabulle">Bubble Sort</option>
+            <option value="tricocktail">Cocktail Sort</option>
+            <option value="trideshell">Shell Sort</option>
+            <option value="trifusion">Merge Sort</option>
+            <option value="trignome">Gnome Sort</option>
+            <option value="tripairimpair">Pair-Impairs Sort</option>
+            <option value="triparinsert">Insertion Sort</option>
+            <option value="triparselection">Selection Sort</option>
+            <option value="tripartas">Heap Sort</option>
+            <option value="tripeigne">Comb Sort</option>
+            <option value="trirapide">Quick Sort</option>
+        </select>
+        <br><br>
+        <p><label for="numbers">Entrer des entiers séparés d'une virgule :</label></p>
+        <input type="text" id="numbers" name="numbers" required>
+        <br><br>
+        <button type="submit">Trier</button>
+    </form>
+    {% if sorted_numbers %}
+        <h2>Entiers triés:</h2>
+        <p style="white-space: pre-wrap;">{{ sorted_numbers|safe }}</p>
+    {% endif %}
+
+    <footer>
+        <div class="footer-container">
+            BENDJEBBAR Adam 43006224 | KAN Kevin 43005517
+        </div>
+    </footer>
+    
+</body>
+</html>
